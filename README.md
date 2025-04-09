@@ -14,16 +14,12 @@ A collection of math and physics concepts taught by former [RoboterAG]([https://
 git clone https://github.com/[username]/roboterag-alumni.git
 ```  
 
-Browse by topic:  
-- `/math` – Vectors, matrices, derivatives  
-- `/physics` – Classical physics  
-
 ## Why This Exists  
 
 We simplify university-level concepts with:  
-✔ Visual explanations  
-✔ Practical code demos  
-✔ Exercises with solutions  
+- Visual explanations  
+- Practical code demos  
+- Exercises with solutions  
 
 ## How to Contribute  
 
@@ -33,6 +29,3 @@ Found a typo? Want to add a topic?
 3. Follow [CONTRIBUTING.md](/CONTRIBUTING.md)  
 
 *Licensed under MIT • Maintained by RoboterAG Alumni*  
-
----  
-Short, scannable, and action-oriented—ideal for students! Adjust links as needed.
