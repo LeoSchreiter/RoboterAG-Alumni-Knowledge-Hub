@@ -1,0 +1,47 @@
+\documentclass[12pt,a4paper]{report}
+
+\input{preamble}
+
+
+% Document Metadata
+\title{Alumni Compendium}           % Sets the document title  
+\author{Leonard Schreiter, Niels Trapp}          % Specifies the authors  
+\date{\today}           % Uses today's date dynamically  
+
+% Header and Footer Configuration (Fancyhdr)
+\pagestyle{fancy}       % Enables custom headers and footers using the fancyhdr package  
+\setlength{\headheight}{30pt}  % Adjusts header height to prevent overlap  
+\fancyhf{}              % Clears default header/footer settings  
+
+% Left Header  
+\lhead{
+    \textbf{Leonard Schreiter}\\ 
+    \href{mailto:leonard.schreiter@stud.uni-heidelberg.de}{leonard.schreiter@stud.uni-heidelberg.de}
+}
+
+% Center Header 
+\chead{}
+
+% Right Header  
+\rhead{
+    \textbf{Niels Trapp}\\
+    \href{mailto:ntrapp@student.ethz.ch}{ntrapp@student.ethz.ch}
+}
+
+% Footer  
+\cfoot{\thepage}       % Displays page number at the center of the footer  
+
+
+\begin{document}
+
+    \maketitle
+
+    \tableofcontents
+
+    \chapter{Mathematics}
+        \section{LinA}
+
+    Lorem ipsum
+
+
+\end{document}
