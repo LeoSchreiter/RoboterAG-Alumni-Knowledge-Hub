@@ -143,6 +143,11 @@ ipython_config.py
 *.cb2
 .*.lb
 
+## Latexindent
+*.bak
+*.bak0
+*.bak1
+
 ## Intermediate documents:
 *.dvi
 *.xdv
