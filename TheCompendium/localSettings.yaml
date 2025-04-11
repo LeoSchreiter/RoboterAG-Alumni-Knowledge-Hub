@@ -1,0 +1,33 @@
+onlyOneBackUp: 1
+
+indentAfterHeadings:
+  part:
+    indentAfterThisHeading: "\t"
+    level: 1
+  chapter:
+    indentAfterThisHeading: "\t"
+    level: 2
+  section:
+    indentAfterThisHeading: "\t"
+    level: 3
+  subsection:
+    indentAfterThisHeading: "\t"
+    level: 4
+  subsection*:
+    indentAfterThisHeading: "\t"
+    level: 4
+  subsubsection:
+    indentAfterThisHeading: "\t"
+    level: 5
+  paragraph:
+    indentAfterThisHeading: "\t"
+    level: 6
+  subparagraph:
+    indentAfterThisHeading: "\t"
+    level: 7
+
+indentPreamble: 1
+
+noAdditionalIndent:
+  document: 0
+
