@@ -31,3 +31,6 @@ indentPreamble: 1
 noAdditionalIndent:
   document: 0
 
+modifyLineBreaks:
+  oneSentencePerLine:
+    manipulateSentences: 0

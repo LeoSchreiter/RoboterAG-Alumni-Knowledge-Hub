@@ -2,7 +2,6 @@
 
 \input{preamble}
 
-
 % Document Metadata
 \title{Alumni Compendium}           % Sets the document title  
 \author{Leonard Schreiter, Niels Trapp}          % Specifies the authors  
@@ -31,7 +30,6 @@
 % Footer  
 \cfoot{\thepage}       % Displays page number at the center of the footer  
 
-
 \begin{document}
 
 	\maketitle
@@ -44,8 +42,9 @@
 
 		  Um Objekte untereinander in Relation setzen zu können und Eigenschaften wie Distanzen, Winkel und Geschwindikeiten zwischen ihnen messen und berechnen zu können, benötigt man ein festgelegtes System, ein Koordinatensystem.
 		  Das Zentrum eines Koordinatensystems kann man sich wie einen Anker vorstellen, den man einmal (am besten zu Beginn) wirft, und dann von ihm ausgehend Berechnungen durchführt.
-		  Eine natürliche Wahl des Koordinatenmittelpunkts kann beispielsweise der Roboter selbst sein. Er befindet sich dann zu allen Zeitpunkten (in \hyperref[Mathe_KS_kartesisch]{kartesischen} Koordinaten) im Punkt
-		  \[ \begin{pmatrix}0,0\end{pmatrix}^\top \text{ bzw. }\begin{pmatrix}0,0,0\end{pmatrix}^\top \]
+		  Eine natürliche Wahl des Koordinatenmittelpunkts kann beispielsweise der Roboter selbst sein.
+		  Er befindet sich dann zu allen Zeitpunkten (in \hyperref[Mathe_KS_kartesisch]{kartesischen} Koordinaten) im Punkt
+		  \begin{equation*} \begin{pmatrix}0,0\end{pmatrix}^\top \text{ bzw. }\begin{pmatrix}0,0,0\end{pmatrix}^\top \end{equation*}
 		  und alles andere wie Hindernisse, Wände, Tore oder der Ball in Bezug zu ihm im zwei- oder dreidimensionalen Raum. \\
 		  Dieses Kapitel widmen wir unterschiedlichen Arten von Koordinatensystemen, der geeigneten Wahl eines Koordinatensystems und zuletzt ein Ausblick auf Transformationen und weiterführenden Themen.
 
@@ -54,9 +53,39 @@
 
 	  \subsection{Zweidimensionale Koordinatensysteme}
 		  \subsubsection{Das kartesische Koordinatensystem}\label{Mathe_KS_kartesisch}
-			  Das aus der Schule wohl bekannteste Koordinatensystem ist mit Abstand das zweidimensionale kartesische Koordinatensystem.
+			  Das aus der Schule wohl bekannteste Koordinatensystem ist das zweidimensionale kartesische Koordinatensystem.
+			  Man stellt s
 
+			  Durch andere Anwendungen kann die kartesische Darstellung aber schnell zu einem großen Rechenaufwand führen und eine Fehlerquelle darstellen.
+			  Möchte man beispielsweise Punkte auf einem Kreis \(K\) beschreiben, benötigt man bereits trigonometische Funktionen (\(\sin, \cos\)).
+			  %Missing Picture
+			  Zur Einfachheit halber wählen wir für \(K\) Radius \(r = 1\) und versuchen die Koordinaten eines beliebigen Punktes \(P \in K\) in kartesischen Koordinaten darzustellen.
+			  Über die Definition des Sinus und Kosinus
+			  \[
+				  \sin \alpha \coloneq \frac{\text{Gegenkathete}}{\text{Hypotenuse}}, \cos \alpha \coloneq \frac{\text{Ankathete}}{\text{Hypotenuse}}
+			  \]
+			  erhält man die Beziehung:
+			  \[
+				  P = \begin{pmatrix}
+					  \cos\alpha \\
+					  \sin\alpha
+					  1.06534
+				  \end{pmatrix}
+			  \]
+			  wobei \(\alpha\) gerade der Winkel zwischen der positiven x-Achse und der Verbindungslinie des Ursprungs und dem Punkt ist.
+			  Es fällt auf, dass so jeder Punkt auf dem Einheitskreis genau einmal getroffen wird, wenn der Winkel aus dem Intervall \(\alpha\in \left[ 0,\SI{360}{\degree}\right)\) gewählt wird.
+			  Da jeder Punkt in der Ebene auf genau einem Kreis mit dem Ursprung als Mittelpunkt mit einem gewissen Radius liegt, führt diese Anschauung auf die Parametrisierung der Ebene über Radius und Winkel, die Polarkoordinaten.
 
+		  \subsubsection{Die Polarkoordinaten}\label{Mathe_KS_polar}
+			  \begin{satz}{Die polare Parametrisierung der Ebene}{stz:satz:polare_ebene}
+				  Die gesamte zweidimensionale Fläche kann durch das geordnete Paar von
+			  \end{satz}
+			  \begin{proof}Ja hallo
 
+				  \begin{align*}
+					  A \implies B \\
+					  \o, \emptyset, \O, \varnothing
+				  \end{align*}
+			  \end{proof}
 
 \end{document}

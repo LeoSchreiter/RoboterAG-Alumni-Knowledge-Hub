@@ -40,7 +40,8 @@
 % Bibliography and References
 %\usepackage[backend=biber, style=alphabetic]{biblatex}  % Bibliography management with Biber  
 %\addbibresource{references.bib}                         % Specifies the bibliography file  
-\usepackage{hyperref}                                   % Clickable links for references, URLs, and TOC entries  
+\usepackage{hyperref}                                   % Clickable links for references, URLs, and TOC entries 
+\usepackage{cleveref} 
 
 % Appendices
 \usepackage[toc,page]{appendix}  % Customizable appendix section with TOC integration  
@@ -51,6 +52,16 @@
 
 % Chapter section format
 \usepackage{titlesec}   % For section formatting
+
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems}
+
+\newtcbtheorem[crefname={satz}{Satz},number within=chapter]{satz}{Satz}%
+{colback=white,colframe=red!50!black,fonttitle=\bfseries,
+description font=\mdseries\itshape}{stz}
+
+\crefname{stz}{satz}{Satz}
+\Crefname{stz}{Satz}{Satz}
 
 %\let\oldappendix\appendix 
 
