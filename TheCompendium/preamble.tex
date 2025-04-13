@@ -8,6 +8,9 @@
 \usepackage{faktor}       % Quotient structures (e.g., quotient groups)  
 \usepackage{bbm}          % Double-struck (blackboard bold) characters for numbers/symbols
 
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\phi}{\varphi}
+
 
 % Tables and arrays
 \usepackage{array}        % Extended table functionality (e.g., column formatting)  
@@ -21,7 +24,6 @@
 \usepackage{graphicx}     % Inserting and manipulating images  
 \usepackage{overpic}      % Overlay text and objects on images  
 \usepackage{svg}          % Directly include and manipulate SVG images  
-\usepackage{wrapfig}      % Wrap text around figures  
 \usepackage{subcaption}   % Subfigures and subcaptions in figures  
 \usepackage{caption}      % Customization of captions for figures and tables  
 
@@ -33,9 +35,11 @@
 \usepackage{setspace}     % Adjust line spacing  
 \usepackage[margin=25mm]{geometry}  % Modify page margins and layout  
 \usepackage{float}        % Precise control over figure and table placement  
-\usepackage{wrapfig}      % Wrapping text around figures  
 \usepackage{fancyhdr}     % Custom headers and footers  
 \usepackage{tabto}        % Custom tab stops for alignment
+\usepackage{microtype}
+\usepackage{titlesec}   % For section formatting
+% \usepackage{showframe}
 
 % Bibliography and References
 %\usepackage[backend=biber, style=alphabetic]{biblatex}  % Bibliography management with Biber  
@@ -48,45 +52,30 @@
 
 % Units and Numbers
 \usepackage{siunitx}      % Proper formatting of SI units and numbers  
-\sisetup{separate-uncertainty=true, multi-part-units=single}  % Configures uncertainty notation
 
-% Chapter section format
-\usepackage{titlesec}   % For section formatting
-
+% Custom Theorem Enviroments
 \usepackage{tcolorbox}
 \tcbuselibrary{theorems}
 
 \newtcbtheorem[crefname={satz}{Satz},number within=chapter]{satz}{Satz}%
-{colback=white,colframe=red!50!black,fonttitle=\bfseries,
+{colback=red!10,colframe=red!50!black,fonttitle=\bfseries,
 description font=\mdseries\itshape}{stz}
-
 \crefname{stz}{satz}{Satz}
 \Crefname{stz}{Satz}{Satz}
 
-%\let\oldappendix\appendix 
 
-%\titleclass{\chapter}{straight}
-%\titleformat{\chapter}[display]
-  %{\normalfont\LARGE\bfseries}{}{0pt}{}
-%\titlespacing*{\chapter}{0pt}{0pt}{*1}
+\definecolor{myblue}{RGB}{139, 196, 242}
 
-%\titleformat{\section}[display]  % Modify section format
-  %{\normalfont\Large\bfseries}  % Keep original styling
-  %{}
-  %{0pt}  % Space between number (which is now empty) and title
-  %{}  % No additional formatting
+\newtcbtheorem[crefname={bemerkung}{Bemerkung},number within=chapter]{bemerkung}{Bemerkung}%
+{colback=myblue!20,colframe=myblue,fonttitle=\bfseries,
+description font=\mdseries\itshape}{bem}
+\crefname{bem}{bemerkung}{Bemerkung}
+\Crefname{bem}{Bemerkung}{Bemerkung}
 
 
-%\renewcommand{\appendix}{%
-    %\newpage
-    %\oldappendix
-    %\titleclass{\chapter}{straight}
-    %\titleformat{\chapter}[hang]
-    %{\normalfont\LARGE\bfseries}{\appendixname~\thechapter}{1em}{}%
-    %\titlespacing*{\chapter}{0pt}{*2}{*1}%
-%}
+\usepackage[german]{babel}
 
+\usepackage{titling}
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 
 
-% Commands
-%\newcommand{\RomanNumeralCaps}[1]
-    %{\MakeUppercase{\romannumeral #1}}
+\usepackage{parskip}
