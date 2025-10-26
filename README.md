@@ -11,7 +11,7 @@ A collection of math and physics concepts taught by former [RoboterAG]([https://
 ## Quick Start  
 
 ```bash
-git clone https://github.com/[username]/roboterag-alumni.git
+git clone https://github.com/LeoSchreiter/roboterag-alumni.git
 ```  
 
 ## Why This Exists  
